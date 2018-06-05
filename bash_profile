@@ -12,6 +12,7 @@ alias gitm='git checkout master'
 alias gitp='git pull && git prune'
 alias gits='git status && git branch'
 alias gitb='git branch'
+alias git-saw="git branch | grep -v master | xargs git branch -D "
 
 function curr_branch {
   echo `git symbolic-ref HEAD | cut -c12-`
